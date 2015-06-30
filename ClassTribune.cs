@@ -24,8 +24,8 @@ namespace LanTribune
 
         public XmlDocument Add(ClassMessage msg)
         {
-                _messages.Add(msg.Identity, msg);
-                return MessageToXml(msg);
+            _messages.Add(msg.Identity, msg);
+            return MessageToXml(msg);
         }
 
         public XmlDocument Add(String msg)
