@@ -20,7 +20,6 @@ namespace LanTribune
     /// </summary>
     public partial class MainWindow
     {
-        public Guid Identity { get; private set; }
         private ClassNetwork _oNet;
         private ClassTribune _oTrib;
         private object _lock;
@@ -30,7 +29,6 @@ namespace LanTribune
         {
             
             _oTrib=new ClassTribune();
-            Identity = Guid.NewGuid();
             _oNet=new ClassNetwork(_oTrib, this);
             _lock = new object();
             _lstColor=new Dictionary<Guid, string>();
