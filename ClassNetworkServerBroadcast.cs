@@ -21,8 +21,6 @@ namespace LanTribune
 
         private Thread _clientThread;
 
-        public Guid Identity { get; private set; }
-
         private Boolean _run;
 
         public Boolean Run
@@ -40,7 +38,6 @@ namespace LanTribune
 
         protected ClassNetworkServerBroadcast()
         {
-            Identity = Guid.NewGuid();
             Run = true;
         }
 
